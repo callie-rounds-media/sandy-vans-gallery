@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sandy Vans · Your Campaign Gallery</title>
+    <meta name="description" content="Your campaign deliverables, delivered by Callie Rounds." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ─── Sticky nav ─── -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a class="brand" href="#top">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="20" height="20">
+              <path
+                d="M3 22 L3 12 L7 8 L21 8 L25 12 L29 12 L29 22 L25 22 A3 3 0 0 1 19 22 L13 22 A3 3 0 0 1 7 22 Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="brand__name">Sandy<span class="brand__amp">·</span>Vans</span>
+        </a>
+        <nav class="nav__links" aria-label="Sections">
+          <a href="#gallery">Photos</a>
+          <a href="#reels">Reels</a>
+          <a href="#carousel">Carousel</a>
+          <a href="#files">Files</a>
+        </nav>
+        <a class="nav__cta" href="#files">Download all</a>
+      </div>
+    </header>
+
+    <!-- ─── Cover ─── -->
+    <section class="cover" id="top">
+      <div class="cover__media" id="cover-media"></div>
+      <div class="cover__scrim"></div>
+      <div class="cover__inner">
+        <p class="cover__eyebrow">Campaign Delivery · Spring 2026</p>
+        <h1 class="cover__title">Sandy Vans<br /><span>×</span> Callie&nbsp;Rounds</h1>
+        <p class="cover__meta">Photos · Reels · Carousel</p>
+      </div>
+      <a class="cover__scroll" href="#gallery" aria-label="Scroll to content">
+        <span>View the gallery</span>
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M12 4v15M5 13l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <main>
+      <!-- ─── Photo gallery ─── -->
+      <section class="block" id="gallery">
+        <div class="block__head">
+          <div>
+            <p class="eyebrow">01 · The Photos</p>
+            <h2 class="block__title">The gallery</h2>
+          </div>
+        </div>
+        <div id="gallery-grid"><!-- scenes + tiles injected --></div>
+      </section>
+
+      <!-- ─── Reels ─── -->
+      <section class="block block--tint" id="reels">
+        <div class="block__head">
+          <div>
+            <p class="eyebrow">02 · The Reels</p>
+            <h2 class="block__title">Vertical reels</h2>
+          </div>
+        </div>
+        <div class="reels" id="reels-row"><!-- reels injected --></div>
+      </section>
+
+      <!-- ─── Carousel ─── -->
+      <section class="block" id="carousel">
+        <div class="block__head">
+          <div>
+            <p class="eyebrow">03 · The Carousel</p>
+            <h2 class="block__title">A proposed carousel post</h2>
+          </div>
+        </div>
+        <p class="block__intro">these are short horizontal clips, almost moving stills. carousels are having a real moment right now and the algorithm is leaning into them, so the easy move is to pick any four or five of these, drop them into one post, and let people swipe. mix and match whichever ones feel right below, they all stand on their own.</p>
+        <div class="carousel-stage">
+          <article class="ig" id="ig-post">
+            <header class="ig__top">
+              <span class="ig__avatar" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="18" height="18">
+                  <path d="M3 22 L3 12 L7 8 L21 8 L25 12 L29 12 L29 22 L25 22 A3 3 0 0 1 19 22 L13 22 A3 3 0 0 1 7 22 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <div class="ig__id">
+                <span class="ig__name">sandyvans</span>
+                <span class="ig__loc">San Diego, California</span>
+              </div>
+              <span class="ig__more" aria-hidden="true">···</span>
+            </header>
+
+            <div class="ig__media" id="ig-media">
+              <div class="ig__track" id="ig-track"><!-- slides injected --></div>
+              <button class="ig__arrow ig__arrow--prev" id="ig-prev" aria-label="Previous slide">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="ig__arrow ig__arrow--next" id="ig-next" aria-label="Next slide">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="ig__count" id="ig-count">1/5</div>
+            </div>
+
+            <div class="ig__dots" id="ig-dots"></div>
+
+            <div class="ig__actions">
+              <span class="ig__icons" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 21s-7.5-4.6-10-9.2C.4 8.6 2 5 5.5 5 8 5 9.5 6.8 12 9c2.5-2.2 4-4 6.5-4C22 5 23.6 8.6 22 11.8 19.5 16.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M21 11.5a8.5 8.5 0 0 1-12.2 7.6L3 21l1.9-5.8A8.5 8.5 0 1 1 21 11.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M22 3L11 14M22 3l-7 18-4-7-7-4 18-7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="ig__save" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 4h12v17l-6-4-6 4V4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <div class="ig__caption">
+              <span class="ig__name">sandyvans</span>
+              a different view out the back doors every morning. swipe through →
+            </div>
+          </article>
+        </div>
+
+        <div class="mixer">
+          <p class="mixer__label">tap to add or remove clips, the post above updates live</p>
+          <div class="mixer__tray" id="mixer-tray"><!-- clip toggles injected --></div>
+        </div>
+      </section>
+
+      <!-- ─── Files / Drive ─── -->
+      <section class="files" id="files">
+        <a class="btn btn--primary" id="drive-link" href="#" target="_blank" rel="noopener">
+          Open your drive
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M7 17L17 7M17 7H9M17 7v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="files__hint" id="drive-hint">drive link goes here — send it over and I'll wire it in</p>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot__inner">
+        <span class="foot__brand">delivered with care by</span>
+        <a class="foot__handle" href="https://instagram.com/callie.rounds" target="_blank" rel="noopener">@callie.rounds</a>
+      </div>
+    </footer>
+
+    <!-- ─── Lightbox ─── -->
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox__close" id="lb-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lb-prev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <figure class="lightbox__stage" id="lb-stage"></figure>
+      <button class="lightbox__nav lightbox__nav--next" id="lb-next" aria-label="Next">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
