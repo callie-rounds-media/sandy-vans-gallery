@@ -244,6 +244,10 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   line-height: 1.55;
 }
 
+/* Carousel reads as one centered column (header + intro align with the post) */
+#carousel .block__head { justify-content: center; text-align: center; }
+#carousel .block__intro { margin-left: auto; margin-right: auto; text-align: center; }
+
 /* ─── Scene header ─── */
 .scene-head {
   display: flex;

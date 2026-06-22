@@ -75,9 +75,10 @@ const PHOTOS = SCENES.flatMap((s) =>
 // Cover photo (change to any gallery shot you like):
 const COVER_SRC = "photos/scene-1/scene1-01.jpg";
 
-// ── Reels: 9:16 vertical. Only the text versions go here. ──
+// ── Reels: 9:16 vertical. All start muted; tap to unmute. ──
 const REELS = [
   { src: "videos/reels/reel-1.mp4", poster: "videos/reels/poster-1.jpg" },
+  { src: "videos/reels/reel-2.mp4", poster: "videos/reels/poster-2.jpg" },
 ];
 
 // ── Carousel: horizontal "moving still" clips, in post order. ──
