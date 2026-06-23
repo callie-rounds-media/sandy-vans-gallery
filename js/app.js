@@ -6,8 +6,8 @@
 */
 
 const CONFIG = {
-  // Paste the client's permanent Drive link here:
-  driveUrl: "",
+  // Permanent Drive link (Anyone with the link → Viewer):
+  driveUrl: "https://drive.google.com/drive/folders/1w_JwOotU1On2Z3_5RW4POcKOvLm9PEwG?usp=share_link",
 };
 
 // ── Photos grouped by scene. Add a new { name, photos:[...] } block per scene. ──
@@ -274,8 +274,15 @@ const driveHint = document.getElementById("drive-hint");
 const filesSection = document.getElementById("files");
 const navCta = document.querySelector(".nav__cta");
 if (CONFIG.driveUrl) {
+  // Bottom "Open your drive" button
   driveLink.href = CONFIG.driveUrl;
   driveHint.hidden = true;
+  // Top-right "Download all" button → open the same Drive in a new tab
+  if (navCta) {
+    navCta.href = CONFIG.driveUrl;
+    navCta.target = "_blank";
+    navCta.rel = "noopener";
+  }
 } else {
   // No Drive link yet — hide the download elements so nothing dead shows publicly.
   if (filesSection) filesSection.hidden = true;
